@@ -1,9 +1,8 @@
 'use client';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-
 
 export default function Home() {
   return (
@@ -17,14 +16,14 @@ export default function Home() {
             <div className="md:w-1/2 md:ml-8">
               <h2 className="text-4xl font-bold text-accent">Hi, I'm Rebecca Chan</h2>
               <p className="text-gray-700 text-l mt-4">I am a skilled project manager specializing in software development and business operations. With a passion for optimizing processes and delivering impactful results, I excel in leading teams, managing complex projects, and driving innovation.</p>
-              <div className="mt-6">
-                <a href="https://www.linkedin.com/rebeccachan13" className="text-blue-600">
-                  <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8 mr-2" />
+              <div className="mt-6 flex space-x-4">
+                <a href="https://www.linkedin.com/rebeccachan13" className="text-blue-600 transition-transform duration-200 ease-in-out transform hover:scale-110">
+                  <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8" />
                 </a>
-                <a href="https://www.github.com/rebeccachan13" className="text-gray-800">
-                  <FontAwesomeIcon icon={faGithub} className="h-8 w-8 mr-2" />
+                <a href="https://www.github.com/rebeccachan13" className="text-gray-800 transition-transform duration-200 ease-in-out transform hover:scale-110">
+                  <FontAwesomeIcon icon={faGithub} className="h-8 w-8" />
                 </a>
-                <a href="/resume_RebeccaChan.pdf" className="text-gray-800">
+                <a href="/resume_RebeccaChan.pdf" className="text-gray-800 transition-transform duration-200 ease-in-out transform hover:scale-110">
                   <FontAwesomeIcon icon={faDownload} className="h-8 w-8" />
                 </a>
               </div>

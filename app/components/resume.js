@@ -7,7 +7,7 @@ export default function Resume() {
       <div className="max-w-3xl w-full space-y-8 mx-auto">
         
         {/* Strengths and Expertise */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-md rounded-lg p-6 transition-transform duration-200 ease-in-out hover:scale-105">
           <h2 className="text-2xl font-semibold mb-4">Strengths and Expertise</h2>
           <div className="grid grid-cols-2 gap-4 text-gray-800">
             <ul className="list-disc list-inside space-y-2">
@@ -30,7 +30,7 @@ export default function Resume() {
         </div>
         
         {/* Technical Skills */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-md rounded-lg p-6 transition-transform duration-200 ease-in-out hover:scale-105">
           <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
           <div className="grid grid-cols-2 gap-4 text-gray-800">
             <ul className="list-disc list-inside space-y-2">
@@ -51,7 +51,7 @@ export default function Resume() {
         </div>
 
         {/* Education */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-md rounded-lg p-6 transition-transform duration-200 ease-in-out hover:scale-105">
           <h2 className="text-2xl font-semibold mb-4">Education</h2>
           <div className="mb-4 flex items-start">
             <Image src="/sait.png" alt="SAIT Logo" width={48} height={48} className="mr-4" />
@@ -73,7 +73,7 @@ export default function Resume() {
         </div>
 
         {/* Work Experience */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-md rounded-lg p-6 transition-transform duration-200 ease-in-out hover:scale-105">
           <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
           <div className="mb-8">
             <h3 className="text-lg font-bold">Project Manager</h3>
@@ -109,7 +109,7 @@ export default function Resume() {
         </div>
 
         {/* Certifications */}
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-md rounded-lg p-6 transition-transform duration-200 ease-in-out hover:scale-105">
           <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
           <div className="flex items-start">
             <Image src="/pmp.png" alt="PMP Logo" width={48} height={48} className="mr-4" />
@@ -121,7 +121,9 @@ export default function Resume() {
         </div>
 
         {/* Projects Carousel */}
-        <ProjectsCarousel />
+        <div className="transition-transform duration-200 ease-in-out hover:scale-105 mt-4">
+          <ProjectsCarousel />
+        </div>
       </div>
     </section>
   );
