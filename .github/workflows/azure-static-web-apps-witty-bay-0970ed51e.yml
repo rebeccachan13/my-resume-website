@@ -22,7 +22,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16.20.2"
+          node-version: "18.17.0" # Specify the Node.js version here
+      - name: Install Dependencies
+        run: npm install
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -35,6 +37,7 @@ jobs:
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
+          app_build_command: 'npm run build' # Ensure this uses the right Node.js version
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
@@ -46,5 +49,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_YOUR_GENERATED_HOSTNAME }}
+         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_BAY_0970ED51E }}
           action: "close"
