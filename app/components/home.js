@@ -13,7 +13,7 @@ export default function Home() {
           <div className="hero-content flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 flex justify-center md:justify-end md:items-center mb-4 md:mb-0">
               <Image
-                src="/rebecca.jpg"
+                src="/rebecca.png"
                 alt="Rebecca"
                 width={400} 
                 height={400} 
