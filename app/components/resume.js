@@ -102,7 +102,7 @@ export default function Resume() {
             <p className="text-gray-700">MGB METRO GROUP Buying HK Ltd, Hong Kong</p>
             <p className="text-gray-700">Jul 2016 – Feb 2017</p>
             <ul className="list-disc list-inside ml-6 mt-2 space-y-2 text-gray-800">
-              <li>Successfully facilitated communication between design agencies, photographers, translation companies, and vendors to coordinate artwork production, ensuring that all projects met customers' specific requirements.</li>
+              <li>Successfully facilitated communication between design agencies, photographers, translation companies, and vendors to coordinate artwork production, ensuring that all projects met customers&apos; specific requirements.</li>
               <li>Managed the quality of all packaging artwork projects, maintaining a keen eye for detail.</li>
             </ul>
           </div>
